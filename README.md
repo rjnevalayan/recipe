@@ -1,15 +1,10 @@
-//Static Recipe Page
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Recipe page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; margin-top: 20px; font-family: 'Outfit', sans-serif;}
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -25,7 +20,6 @@
             font-family: 'Outfit-SemiBold';
             src: url('assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
         }
-
     body{
       background-color: #F3E5D8;
       /* margin: 0; */
@@ -42,7 +36,6 @@
       border-radius: 10px;
       background-color: #FFFFFF;
       margin: 100%;
-      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     }
     .header-image img{
       border-radius: 5px;
@@ -152,7 +145,6 @@
       An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.
     </p>
-
     <div class="card-paragraph-1">
       <div class="title-2">
         Preparation time
@@ -169,7 +161,6 @@
         </li>
       </ul>
     </div>
-  
     <div>
     <div class="title-3">
       Ingredients
@@ -183,7 +174,6 @@
       </ul>
     </div>
     <hr>
-  
     <div>
     <div class="title-4">
       Instructions
