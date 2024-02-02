@@ -1,13 +1,15 @@
+//Static Recipe Page
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Recipe page</title>
 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; margin-top: 20px; font-family: 'Outfit', sans-serif;}
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -24,17 +26,15 @@
             src: url('assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
         }
 
-    body {
+    body{
       background-color: #F3E5D8;
+      /* margin: 0; */
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100%;
-      font-family: 'Outfit', sans-serif;
-      margin: 0;
     }
-
-    .container {
+    .container{
       position: relative;
       text-align: center;
       padding: 15px;
@@ -42,74 +42,63 @@
       border-radius: 10px;
       background-color: #FFFFFF;
       margin: 100%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     }
-
-    .header-image img {
-      border-radius: 10px;
+    .header-image img{
+      border-radius: 5px;
       height: auto;
       width: 300px;
     }
-
     .title-1 {
       text-align: left;
-      font-size: 18.5px;
+      font-size: 18px;
       margin-top: 10px;
       font-family: 'YoungSerif', sans-serif;
     }
-
-    .paragraph {
+    .paragraph{
       text-align: left;
       font-size: 7.5px;
       font-family: 'Outfit', sans-serif;
       padding-bottom: 10px;
     }
-
-    .card-paragraph-1 {
+    .card-paragraph-1{
       background: #FFF7FC;
       padding-top: 14px;
       padding-left: 14px;
       height: 90px;
       border-radius: 10px;
     }
-
-    .title-2 {
+    .title-2{
       color: #894460;
       font-family: 'Outfit-SemiBold', sans-serif;
       text-align: left;
       font-weight: 800px;
       font-size: 12px;
       margin: 0;
-      padding: 0px;
+      padding: 0px;   
     }
-
-    li {
+    li{
       color: #894460;
       text-align: left;
       font-family: 'Outfit';
       font-size: 7.5px;
       padding-left: 8px;
     }
-
-    li p {
+    li p{
       color: #4A403E;
     }
-
-    span {
+    span{
       font-weight: bold;
     }
-
-    ul {
+    ul{
       text-align: left;
       padding-left: 16px;
     }
-
-    ol {
+    ol{
       text-align: left;
       padding-left: 10px;
     }
-
-    .title-3 {
+    .title-3{
       text-align: left;
       font-size: 14px;
       margin-top: 10px;
@@ -117,8 +106,7 @@
       color: #7C4D46;
       padding-top: 5px;
     }
-
-    .title-4 {
+    .title-4{
       text-align: left;
       font-size: 14px;
       margin-top: 10px;
@@ -126,78 +114,37 @@
       color: #7C4D46;
       padding-top: 5px;
     }
-
-    .title-5 {
+    .title-5{
       text-align: left;
       font-size: 14px;
       margin-top: 10px;
       font-family: 'YoungSerif', sans-serif;
       color: #7C4D46;
-      padding-top:6px;
-      padding-bottom: 8px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
-
-    li::marker {
+    li::marker{
       font-size: 6px;
     }
-
-    hr {
+    hr{
       border: none;
       height: 1px;
       background: #E0E0E0;
     }
-
-    .column-container {
+    .column-container{
       margin-left: 15px;
       font-family: 'Outfit';
       font-size: 7.5px;
     }
-
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-      margin-top: 20px;
-      font-family: 'Outfit', sans-serif;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-
-    /* Responsive styles */
-
-    @media only screen and (max-width: 600px) {
-      .container {
-        width: 100%;
-        margin: 0;
-        box-shadow: none;
-      }
-
-      .header-image img {
-        width: 100%;
-        border-radius: 10;
-      }
-
-      .title-1,
-      .paragraph,
-      .title-2,
-      .card-paragraph-1,
-      .title-3,
-      .title-4,
-      .title-5,
-      .paragraph,
-      .column-container,
-      hr {
-        text-align: left;
-      }
-    }
+   
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header-image">
-      <img src="assets/images/image-omelette.jpeg" alt="image-omelette">
-    </div>
+      <img class="responsive-image" src="assets/images/image-omelette.jpeg" alt="image-omelette">
+    </di
+    v>
     <div class="title-1">
       Simple Omelette Recipe
     </div>
@@ -205,6 +152,7 @@
       An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.
     </p>
+
     <div class="card-paragraph-1">
       <div class="title-2">
         Preparation time
@@ -221,10 +169,11 @@
         </li>
       </ul>
     </div>
+  
     <div>
-      <div class="title-3">
-        Ingredients
-      </div>
+    <div class="title-3">
+      Ingredients
+    </div>
       <ul>
         <li><p>2-3 large eggs</p></li>
         <li><p>Salt, to taste</p></li>
@@ -234,58 +183,55 @@
       </ul>
     </div>
     <hr>
+  
     <div>
-      <div class="title-4">
-        Instructions
-      </div>
-      <ol>
-        <li>
-          <p><span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-            You can add a tablespoon of water or milk for a fluffier texture.</p>
-        </li>
-        <li>
-          <p><span>Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</p>
-        </li>
-        <li>
-          <p><span>Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-            the eggs evenly coat the surface.</p>
-        </li>
-        <li>
-          <p><span>Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the 
-            middle, sprinkle your chosen fillings over one half of the omelette.</p>
-        </li>
-        <li>
-          <p><span>Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the 
-            fillings. Let it cook for another minute, then slide it onto a plate.</p>
-        </li>
-        <li>
-          <p><span>Enjoy</span>: Serve hot, with additional salt and pepper if needed.</p>
-        </li>
-      </ol>
+    <div class="title-4">
+      Instructions
     </div>
-    <hr>
+    <ol>
+      <li>
+        <p><span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.</p>
+      </li>
+      <li>
+        <p><span>Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</p>
+      </li>
+      <li>
+        <p><span>Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          the eggs evenly coat the surface.</p>
+      </li>
+      <li>
+        <p><span>Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</p>
+      </li>
+      <li>
+        <p><span>Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.</p>
+      </li>
+      <li>
+        <p><span>Enjoy</span>: Serve hot, with additional salt and pepper if needed.</p>
+      </li>
+    </ul>
+  </div>
+  <hr>
     <div>
-      <div class="title-5">
-        Nutrition
-      </div>
-      <div class="paragraph">
-        The table below shows nutritional values per serving without the additional fillings.
-      </div>
-      <div class="column-container">
-        <div style="word-spacing: 110px; text-align: left;">Calories <span style="color: #7C4D46;">277kcal</span></div>
-      </div>
-      <hr>
-      <div class="column-container">
-        <div style="word-spacing: 118px; text-align: left;">Carbs <span style="color: #7C4D46;">0g</span></div>
-      </div>
-      <hr>
-      <div class="column-container">
-        <div style="word-spacing: 114px; text-align: left;">Protein  <span style="color: #7C4D46;">20g</span></div>
-      </div>
-      <hr>
-      <div class="column-container">
-        <div style="word-spacing: 128px; text-align: left;">Fat <span style="color: #7C4D46;">22g</span></div>
-      </div>
+        <div class="title-5">
+          Nutrition
+        </div>
+        <div class="paragraph">
+          The table below shows nutritional values per serving without the additional fillings.
+        </div>
+        <div class="column-container">
+            <div style="word-spacing: 110px; text-align: left;">Calories <span style="color: #7C4D46;">277kcal</span></div>
+        </div><hr>
+        <div class="column-container">
+          <div style="word-spacing: 118px; text-align: left;">Carbs <span style="color: #7C4D46;">0g</span></div>    </div><hr>
+        <div class="column-container">
+          <div style="word-spacing: 114px; text-align: left;">Protein  <span style="color: #7C4D46;">20g</span></div>
+        </div><hr>
+        <div class="column-container">
+          <div style="word-spacing: 128px; text-align: left;">Fat <span style="color: #7C4D46;">22g</span></div>
+        </div>
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
